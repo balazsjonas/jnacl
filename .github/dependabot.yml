@@ -1,0 +1,15 @@
+version: 2
+updates:
+- package-ecosystem: maven
+  directory: "/"
+  schedule:
+    interval: daily
+    time: "04:00"
+  open-pull-requests-limit: 10
+  ignore:
+  - dependency-name: biz.aQute.bnd:bnd-maven-plugin
+    versions:
+    - 5.2.0
+  - dependency-name: org.testng:testng
+    versions:
+    - 7.3.0
